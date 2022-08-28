@@ -5,7 +5,7 @@ export const AppHeader = ({ logo, menus }) => {
         <h1 id="brand">{logo}</h1>
         <nav className="main-menu">
           <ul>
-            {menus.map(link => <li><a href={link.link} className="main-menu--link">{link.name}</a></li>)}
+            {menus.map(link => <li key={ link.name }><a href={ link.link } className="main-menu--link">{ link.name }</a></li>)}
           </ul>
         </nav>
         <div className="main-search">

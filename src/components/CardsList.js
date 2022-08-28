@@ -4,7 +4,7 @@ export const CardsList = ({ articles }) => {
   return (
     <main id="articlesList">
       { articles.map((article, index) => {
-          return <Card title={ article.title } description={ article.description } />;
+          return <Card key={ article.title } title={ article.title } description={ article.description } />;
         })
       }
     </main>

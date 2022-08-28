@@ -4,7 +4,7 @@ export const Sidebar = ({ menus }) => {
       <h2>Recent Articles</h2>
       <hr />
       <ul>
-      { menus.map(articleLink => <li><a href={ articleLink.link } className="recent-article--link">{ articleLink.name }</a></li>) }
+      { menus.map(articleLink => <li key={ articleLink.name }><a href={ articleLink.link } className="recent-article--link">{ articleLink.name }</a></li>) }
       </ul>
     </aside>
   )
